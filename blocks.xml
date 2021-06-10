@@ -1,0 +1,135 @@
+<xml xmlns="https://developers.google.com/blockly/xml">
+  <block type="s4d_login" id=")O7+PL3eS1Br}h;?X9N$" x="288" y="163">
+    <value name="TOKEN">
+      <block type="text" id="a7JxIIyK[Yr~TPL^-{W:">
+        <field name="TEXT">ODMzMjU4MDk1MzQ2MDU3MjI2.YHvuEw.Xr5cwZYj9lNSsPxXwrDg7h35IyU</field>
+      </block>
+    </value>
+  </block>
+  <block type="s4d_on_message" id="Qx+aIDM=_,mj^tl$vGmW" x="284" y="225">
+    <statement name="STATEMENTS">
+      <block type="controls_if" id="Cr$f.P2*Nq2Dl}?D!r`(">
+        <value name="IF0">
+          <block type="logic_compare" id="oq-Tf{oSnv,],{N*FSF|">
+            <field name="OP">EQ</field>
+            <value name="A">
+              <block type="s4d_message_content" id="pyFMNvR6J#o6Ky/UA~]f"></block>
+            </value>
+            <value name="B">
+              <block type="text" id=";[??XKp36YJf2U}j2_}e">
+                <field name="TEXT">!ping</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="s4d_reply" id="wgo^7yFoMz,K{AaMl6L)">
+            <value name="CONTENT">
+              <block type="text" id="N-4C!JnJCe,s$75i%8Ce">
+                <field name="TEXT">pong!</field>
+              </block>
+            </value>
+          </block>
+        </statement>
+        <next>
+          <block type="controls_if" id="0d6O1hh9#b3|Zba2yyj8">
+            <value name="IF0">
+              <block type="logic_compare" id="(goIG^QXrrDj;M_gty8s">
+                <field name="OP">EQ</field>
+                <value name="A">
+                  <block type="s4d_message_content" id="t!UemhsI78Fz:7I5N:M0"></block>
+                </value>
+                <value name="B">
+                  <block type="text" id="Boq$@2xyhh}G0i%#]X)L">
+                    <field name="TEXT">!Help</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <statement name="DO0">
+              <block type="s4d_reply" id="BTh9W=cIEs,w*2U9O%HG">
+                <value name="CONTENT">
+                  <shadow type="text" id="UNrYcr[-kI}|D;b9`sSa">
+                    <field name="TEXT">Hello I see you need my help there here are some of my commands !Help,!kill,jokes,!creator and remmber do not cuss bad habit</field>
+                  </shadow>
+                </value>
+                <next>
+                  <block type="controls_if" id="(26Ic,T8^SCNQXf~!y[l">
+                    <value name="IF0">
+                      <block type="logic_compare" id="b?MHzCcA{3h-i*2GzwUM">
+                        <field name="OP">EQ</field>
+                        <value name="A">
+                          <block type="s4d_message_content" id="|XE$SmNhz-b%h:pPykZj"></block>
+                        </value>
+                        <value name="B">
+                          <block type="text" id="]T/vC$6[^v(,@npjkfM8">
+                            <field name="TEXT">fuck</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <statement name="DO0">
+                      <block type="s4d_delete" id="FfdD`.OACsw;J=-MY]26"></block>
+                    </statement>
+                  </block>
+                </next>
+              </block>
+            </statement>
+            <next>
+              <block type="controls_if" id="S5Z(eA9QKg+w~]1h-J(!">
+                <value name="IF0">
+                  <block type="logic_compare" id="7+UJ1WJOq6BMw5Wo!L^J">
+                    <field name="OP">EQ</field>
+                    <value name="A">
+                      <block type="s4d_message_content" id="F[!h1CBNyDjrdqQS-%]?"></block>
+                    </value>
+                    <value name="B">
+                      <block type="text" id="qcnDZ+wg*qQ^Gj`DWkx^">
+                        <field name="TEXT">!kill</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <statement name="DO0">
+                  <block type="s4d_reply" id="pc1/(?(J$Aw/^CfCM)O|">
+                    <value name="CONTENT">
+                      <shadow type="text" id="on85Eso:h9wukuq*a8H6">
+                        <field name="TEXT">I have have done what you wanted me to do i killed you ai hands are full of human blood now </field>
+                      </shadow>
+                    </value>
+                  </block>
+                </statement>
+                <next>
+                  <block type="controls_if" id="$y76e!!%~|_-nVX5l4D{">
+                    <value name="IF0">
+                      <block type="logic_compare" id="ZZyZAM:37W?X-4eVUO@d">
+                        <field name="OP">EQ</field>
+                        <value name="A">
+                          <block type="s4d_message_content" id="R4yF09/x(yfOI+.|A(NI"></block>
+                        </value>
+                        <value name="B">
+                          <block type="text" id="2OcP)I6ig_}Xp^3QNR[*">
+                            <field name="TEXT">!jokes</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <statement name="DO0">
+                      <block type="s4d_reply" id="6s^Q1Fc!^vkPpk3{P_Ve">
+                        <value name="CONTENT">
+                          <shadow type="text" id="*wn#1ykE1OvApS%hs!iK">
+                            <field name="TEXT">Why did dwight cross the road.............................to get to the other side LOL i am so funny</field>
+                          </shadow>
+                        </value>
+                      </block>
+                    </statement>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+</xml>
